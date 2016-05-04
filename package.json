@@ -1,0 +1,8 @@
+{
+	"name": "linkedhs",
+	"dependencies": {
+		"express": "latest",
+		"mongoose": "latest",
+		"body-parser":"latest"
+	}
+}
