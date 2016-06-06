@@ -5,34 +5,6 @@ var Post = mongoose.model('Post');
 //this is our post.js file located at /server/controllers/post.js
 //note the immediate function and the object that is returned
 
-// module.exports = (function() {
-// 	return {
-// 		show: function(request, response) {
-// 			response.json([{name:'Andrew', age:24}, {name:'Michael', age:35}]);
-// 		}
-// 	}
-// })();
-
-/*
-
-module.exports = {
-	show: function(request, response) {
-		response.json([{name:'Andrew', age:24}, {name:'Michael', age: 35}]);
-	}
-}
-
-wrap it in an IIFE:
-
-(function() {
-	return {
-		show: function()...etc.
-
-	};
-})();
-
-*/
-
-
 module.exports = (function() {
 	return {
 		show: function(request, response) {
