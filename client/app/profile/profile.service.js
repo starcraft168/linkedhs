@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('app.profile')
+		.module('app')
 		.factory('profileService', profileService);
 
 	function profileService() {

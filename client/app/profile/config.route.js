@@ -2,17 +2,16 @@
 	'use strict';
 
 	angular
-		.module('app.profile')
+		.module('app')
 		.config(configFunction)
 
 	configFunction.$inject = ['$routeProvider'];
 
 	function configFunction($routeProvider) {
-		$routeProvider.when('/profile', {
+		$routeProvider.when('/', {
 			templateUrl: 'app/profile/profile.html',
 			controller: 'profileController',
 		});
 	}
-
 
 })();

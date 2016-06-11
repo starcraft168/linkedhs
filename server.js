@@ -9,14 +9,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 //set up a static file server that points to the 'client' directory
 app.use(express.static(path.join(__dirname, './client')));
-// require('./server/config/mongoose.js');
-// require('./server/config/routes.js')(app);
+require('./server/config/mongoose.js');
+
+
 
 //this line requires and runs the code from our routes.js file and passes it app so
 //that we can attach our routing rules to our express application!
-// require('./server/config/routes.js')(app);
+require('./server/config/routes.js')(app);
 
 app.listen(3000, function() {
-	// console.log(__dirname);
 	console.log('listening to port 3000');
 });

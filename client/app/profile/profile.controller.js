@@ -2,14 +2,17 @@
 	'use strict';
 
 	angular
-		.module('app.profile')
+		.module('app')
 		.controller('profileController', profileController);
 
 	profileController.$inject = ['$scope','profileService'];
 
-	function profileController(profileService) {
+	function profileController($scope, profileService) {
 		$scope.show = show;
 		$scope.showProfile = showProfile;
+
+
+
 
 		function show() {
 			return 'hello';
